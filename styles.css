@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/фон.webp') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    padding: 20px;
+}
+
+.invitation-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный белый фон */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 80%;
+    max-width: 700px;
+    padding: 40px;
+    text-align: center;
+    backdrop-filter: blur(8px); /* Эффект размытия фона */
+}
+
+.photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ffd700;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.invitation-text h1 {
+    font-size: 3em;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.invitation-text p {
+    font-size: 1.4em;
+    color: #333;
+    margin: 12px 0;
+    line-height: 1.5;
+}
+
+.invitation-text strong {
+    font-weight: bold;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .invitation-container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    .photo img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .invitation-text h1 {
+        font-size: 2.5em;
+    }
+
+    .invitation-text p {
+        font-size: 1.2em;
+    }
+}
